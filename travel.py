@@ -9,8 +9,8 @@ def haversine(lat1, lon1, lat2, lon2):
 
     return R * c
 
-distance = haversine(28.6, 77.2, 19.0, 72.8)
-print(distance)
+#distance = haversine(28.6, 77.2, 19.0, 72.8)
+#print(distance)
 
 def check_impossible_travel(distance_km, time_diff_hours):
     if time_diff_hours == 0:
@@ -20,13 +20,13 @@ def check_impossible_travel(distance_km, time_diff_hours):
         return True
     return False
 
-result = check_impossible_travel(1157, 5)
-print("Impossible?", result)
+#result = check_impossible_travel(1157, 0.5)
+#print("Impossible?", result)
 
 def calculate_precision_recall(tp,fp,fn):
     precision = tp/ (tp + fp)
     recall = tp / (tp + fn)
     return precision, recall
-p, r = calculate_precision_recall(8, 2, 1)
-print("Precision:", p)
-print("Recall:", r)
+#p, r = calculate_precision_recall(8, 2, 1)
+#print("Precision:", p)
+#print("Recall:", r)
